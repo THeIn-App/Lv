@@ -1,0 +1,44 @@
+LiveVoice/
+├─ public/
+│  ├─ icons/              # Place your icons here
+│  ├─ maskable.png        # 512×512 icon
+│  └─ manifest.json       # PWA manifest
+├─ src/
+│  ├─ main.tsx
+│  ├─ App.tsx
+│  ├─ components/
+│  │  ├─ Header.tsx
+│  │  ├─ Brand.tsx
+│  │  ├─ ThemeToggle.tsx
+│  │  ├─ InstallBtn.tsx
+│  │  ├─ TranscriptPanel.tsx
+│  │  ├─ MicButton.tsx
+│  │  ├─ LanguageSelector.tsx
+│  │  ├─ TextArea.tsx
+│  │  ├─ AIWidget.tsx
+│  │  ├─ SummarizeBtn.tsx
+│  │  ├─ TranslateDropdown.tsx
+│  │  ├─ SentimentBadge.tsx
+│  │  ├─ HistoryDrawer.tsx
+│  │  └─ SettingsModal.tsx
+│  ├─ hooks/
+│  │  ├─ useSpeech.ts
+│  │  ├─ useGenAI.ts
+│  │  ├─ useIDB.ts
+│  │  └─ usePrefs.ts
+│  ├─ utils/
+│  │  ├─ exportPdf.ts
+│  │  ├─ exportTxt.ts
+│  │  └─ compress.ts
+│  ├─ types.ts
+│  ├─ style.css            # Tailwind entry
+│  └─ sw.ts                # service-worker for offline
+├─ tests/
+│  ├─ useSpeech.test.ts
+│  ├─ useGenAI.test.ts
+│  ├─ useIDB.test.ts
+│  └─ usePrefs.test.ts
+├─ package.json
+├─ tsconfig.json
+├─ vite.config.ts
+└─ README.md               # 3-line quick-start + env sample

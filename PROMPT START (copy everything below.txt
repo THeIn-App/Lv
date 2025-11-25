@@ -1,0 +1,24 @@
+PROMPT START (copy everything below this line)
+You are a senior full-stack engineer.
+Create a single, monorepo-style zip that contains a fully-functional, responsive, reliable AI-powered voice & text platform named “LiveVoice”.
+0. Non-negotiables
+React 18 + TypeScript + Vite (PWA-ready)
+Tailwind CSS (dark/light mode)
+IndexedDB cache + optimistic UI → works offline, survives reload
+100 % keyboard / screen-reader accessible (WCAG 2.2)
+No “TODO” or stub functions—every button must do exactly what its label promises
+Must run with one command: npm i && npm run dev
+Must build for production with npm run build and pass tsc --noEmit & eslint
+Must be mobile-first (viewport ≤ 360 px) and desktop-last (≥ 1440 px)
+Must expose a single env variable: VITE_GOOGLE_GENAI_KEY (Google GenAI SDK)
+1. Core Features (all wired, no dead clicks)
+Real-time speech-to-text (Web Speech API) → auto-language detect → editable transcript
+AI summarization (Google GenAI) → one-click “Summarize” → collapsible card
+AI translation (GenAI) → 40-language dropdown → replaces transcript inline
+AI sentiment (GenAI) → traffic-light badge + 1-sentence explanation
+Export → PDF (client-side jsPDF) & TXT (File-Saver)
+History → IndexedDB table “sessions” → searchable, deletable, shareable (Web Share API)
+Settings → theme, mic select, font-size, auto-save interval (live, no reload)
+PWA install → vite-plugin-pwa → offline fallback page
+Error boundary → every async call wrapped → toast + retry button
+Telemetry → optional, anonymous, GDPR-compliant (PostHog-js, off by default)
